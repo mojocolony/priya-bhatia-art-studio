@@ -725,3 +725,74 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 @media (max-width: 620px) {
   .brand { width: 220px; }
 }
+
+
+/* v0.15 — final cleanup pass
+   Fix remaining visible sprig cutoffs by pulling the ornaments farther inside the layout,
+   and align the hero eyebrow text with the main text block. */
+.hero-copy > .eyebrow {
+  margin-left: .38rem;
+}
+
+.hero-ornament--green {
+  width: clamp(280px, 25vw, 390px);
+  top: 1.4rem;
+  right: 1.8rem;
+  opacity: .42;
+}
+
+.hero-ornament--rose {
+  width: clamp(235px, 20vw, 315px);
+  left: 1.8rem;
+  bottom: 2.8rem;
+  opacity: .34;
+}
+
+.about-ornament {
+  width: clamp(215px, 20vw, 320px);
+  left: 2.1rem;
+  top: 54%;
+  opacity: .24;
+}
+
+@media (max-width: 980px) {
+  .hero-copy > .eyebrow {
+    margin-left: .28rem;
+  }
+  .hero-ornament--green {
+    width: min(32vw, 285px);
+    right: 1.2rem;
+    top: 1rem;
+    opacity: .26;
+  }
+  .hero-ornament--rose {
+    width: min(28vw, 220px);
+    left: 1rem;
+    bottom: 1.8rem;
+    opacity: .24;
+  }
+  .about-ornament {
+    width: min(27vw, 230px);
+    left: 1rem;
+    top: 52%;
+    opacity: .18;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-copy > .eyebrow {
+    margin-left: .18rem;
+  }
+  .hero-ornament--green {
+    width: 132px;
+    right: .8rem;
+    top: .8rem;
+    opacity: .15;
+  }
+  .hero-ornament--rose {
+    width: 118px;
+    left: .8rem;
+    bottom: 1rem;
+    opacity: .14;
+  }
+}
