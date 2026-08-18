@@ -796,3 +796,38 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
     opacity: .14;
   }
 }
+
+
+/* v0.17 — approved ornament asset swap + restored margin placement */
+.hero-ornament--green {
+  width: clamp(300px, 28vw, 430px);
+  top: -2.8rem;
+  right: -4.25rem;
+  opacity: .44;
+}
+
+.hero-ornament--rose {
+  width: clamp(250px, 23vw, 350px);
+  left: -3.8rem;
+  bottom: -1.35rem;
+  opacity: .28;
+}
+
+.about-ornament {
+  width: clamp(250px, 24vw, 390px);
+  left: -5.75rem;
+  top: 50%;
+  opacity: .22;
+}
+
+@media (max-width: 980px) {
+  .hero-ornament--green { width: min(42vw, 320px); right: -3.25rem; top: -2rem; opacity: .32; }
+  .hero-ornament--rose { width: min(32vw, 235px); left: -2.75rem; bottom: -.5rem; opacity: .24; }
+  .about-ornament { width: min(28vw, 220px); left: -3.5rem; opacity: .18; }
+}
+
+@media (max-width: 620px) {
+  .hero-ornament--green { width: 150px; right: -1.5rem; top: -.75rem; opacity: .14; }
+  .hero-ornament--rose { width: 130px; left: -1.25rem; bottom: .25rem; opacity: .12; }
+  .about-ornament { display: none; }
+}
