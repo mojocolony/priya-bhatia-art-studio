@@ -462,3 +462,149 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* v0.8 — alignment and artwork sizing pass */
+
+/* Keep every major section on the same visual centre line. */
+.section-shell {
+  width: min(1120px, calc(100% - 3rem));
+}
+
+/* Hero remains intentionally two-column, but both columns now occupy equal space. */
+.hero-wrap {
+  min-height: auto;
+}
+.hero {
+  min-height: 610px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(3rem, 5vw, 4.5rem);
+  padding: clamp(3rem, 5vw, 4.5rem) 0 clamp(4rem, 7vw, 5.5rem);
+}
+.hero-copy {
+  max-width: 500px;
+  justify-self: start;
+}
+.hero-art {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255, 253, 249, .55);
+  box-shadow: var(--shadow);
+}
+.hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: none;
+  clip-path: none;
+  border-radius: 0;
+}
+
+/* Gallery: identical frames, with the complete painting visible inside each one. */
+.featured {
+  padding: clamp(4rem, 7vw, 5.5rem) 0;
+}
+.art-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.75rem, 3vw, 2.4rem);
+  align-items: stretch;
+}
+.art-card {
+  width: 100%;
+}
+.art-card .art-button {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255, 253, 249, .55);
+  box-shadow: var(--shadow-soft);
+}
+.art-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: none;
+}
+.art-card .art-button:hover,
+.art-card .art-button:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.art-card .art-button:hover img,
+.art-card .art-button:focus-visible img {
+  transform: none;
+  box-shadow: none;
+}
+
+/* The remaining page sections now share one centred content axis and width rhythm. */
+.about-wrap {
+  padding: clamp(4rem, 7vw, 5.5rem) 0;
+}
+.about-panel {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+.available {
+  padding: clamp(4rem, 7vw, 5.5rem) 0;
+}
+.availability-note {
+  width: min(720px, 100%);
+}
+.contact {
+  padding: clamp(4rem, 7vw, 5.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+}
+.contact-card {
+  width: min(720px, 100%);
+  max-width: none;
+}
+
+/* Slightly tighter heading rhythm makes the long page feel more cohesive. */
+.section-heading {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+@media (max-width: 980px) {
+  .section-shell {
+    width: min(100% - 2.5rem, 1120px);
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero-copy {
+    justify-self: center;
+    width: min(620px, 100%);
+  }
+  .hero-art {
+    width: min(700px, 100%);
+    justify-self: center;
+    order: -1;
+  }
+  .art-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .art-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - .9rem);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .section-shell {
+    width: min(100% - 2rem, 1120px);
+  }
+  .hero-art,
+  .art-card .art-button {
+    aspect-ratio: 4 / 3;
+  }
+  .art-grid {
+    grid-template-columns: 1fr;
+  }
+  .art-card:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+}

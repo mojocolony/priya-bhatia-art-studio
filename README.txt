@@ -1,9 +1,12 @@
-Priya Bhatia Art Studio · v0.7
+Priya Bhatia Art Studio · v0.8
 
-This version swaps the temporary paintings for a preview selection of Priya's real paintings.
+This revision standardizes artwork sizing and page alignment.
 
-Image placement:
-- Hero: canoe lake scene
-- Gallery order: Summer, Flower, Winter
+Changes:
+- Hero artwork sits in a consistent 4:3 frame without cropping the painting.
+- All three Featured Work images use identical 4:3 frames.
+- Original painting proportions are preserved with object-fit: contain.
+- About, Available Work, and Contact sections are centred on the same page axis.
+- Major section widths and vertical spacing are more consistent.
 
-Upload all files in this folder, including the assets folder, to the root of your GitHub repository, replacing the existing files.
+Upload all files and folders in this package to the repository root, replacing v0.7.
