@@ -23,7 +23,11 @@ const sectionObserver = new IntersectionObserver((entries) => {
     .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
   if (!visible) return;
   navLinks.forEach(link => {
-    link.classList.toggle('is-active', link.getAttribute('href') === `#${visible.target.id}`);
+    const href = link.getAttribute('href');
+    const matchesSection =
+      href === `#${visible.target.id}` ||
+      (href === '#top' && visible.target.id === 'home');
+    link.classList.toggle('is-active', matchesSection);
   });
 }, { rootMargin: '-30% 0px -55% 0px', threshold: [0, .15, .35, .6] });
 
