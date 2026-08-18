@@ -1,12 +1,7 @@
-Priya Bhatia Art Studio · v0.4
+Priya Bhatia Art Studio · v0.5
 
-Upload all files in this folder to the root of the GitHub repository,
-replacing the previous versions.
+This version removes the full paintings from the homepage corners and replaces them with the new watercolor botanical asset set.
 
-Changes in v0.4:
-- New, cleaner logo crop from the higher-resolution logo image.
-- Corner paintings are now specially feathered transparent crops rather than rectangular images.
-- Hydrangea is larger and moved farther into the top-right corner.
-- Cyclamen is larger, lower, and partly off-canvas at bottom-left, closer to the invoice composition.
-- Corner artwork is positioned on the homepage rather than fixed to the browser window.
-- Corner artwork and logo use WebP to keep page load much lighter.
+Upload all files and the assets folder to the root of the GitHub repository, replacing the previous website files.
+
+The gallery and hero still use temporary artwork placeholders until Priya's final paintings are selected.

@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Priya Bhatia Art Studio · v0.4 -->
+<!-- Priya Bhatia Art Studio · v0.5 -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -15,17 +15,10 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="corner-art corner-art--top" aria-hidden="true">
-    <img src="corner-hydrangea.webp" alt="">
-  </div>
-  <div class="corner-art corner-art--bottom" aria-hidden="true">
-    <img src="corner-cyclamen.webp" alt="">
-  </div>
-
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Priya Bhatia Art Studio home">
-        <img src="logo-priya-bhatia.webp" alt="Priya Bhatia Art Studio">
+        <img src="logo-priya-bhatia.png" alt="Priya Bhatia Art Studio">
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -44,82 +37,92 @@
   </header>
 
   <main id="main">
-    <section class="hero section-shell" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Dundas, Ontario</p>
-        <h1>Original<br>Watercolour<br>Paintings</h1>
-        <img class="divider divider--left" src="botanical-divider.svg" alt="" aria-hidden="true">
-        <p class="hero-intro">Watercolour art inspired by colour, place, light, and the beauty found in everyday moments.</p>
-        <a class="paint-button" href="#gallery">View Gallery</a>
-      </div>
+    <section class="hero-wrap" id="home">
+      <img class="hero-ornament hero-ornament--green" src="assets/leaf-sprig-a.png" alt="" aria-hidden="true">
+      <img class="hero-ornament hero-ornament--rose" src="assets/botanical-accent-c.png" alt="" aria-hidden="true">
 
-      <button class="hero-art art-button reveal" type="button" data-lightbox-src="placeholder-hero.jpg" data-lightbox-alt="Watercolour harbour scene used as a temporary homepage painting">
-        <img src="placeholder-hero.jpg" alt="Watercolour harbour scene">
-      </button>
+      <div class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Dundas, Ontario</p>
+          <h1>Original<br>Watercolour<br>Paintings</h1>
+          <img class="divider divider--left" src="assets/section-divider.png" alt="" aria-hidden="true">
+          <p class="hero-intro">Watercolour art inspired by colour, place, light, and the beauty found in everyday moments.</p>
+          <a class="paint-button" href="#gallery">View Gallery</a>
+        </div>
+
+        <button class="hero-art art-button reveal" type="button" data-lightbox-src="placeholder-hero.jpg" data-lightbox-alt="Temporary watercolour harbour scene">
+          <img src="placeholder-hero.jpg" alt="Temporary watercolour harbour scene">
+          <span class="temporary-note">Temporary artwork</span>
+        </button>
+      </div>
     </section>
 
     <section class="section-shell featured" id="gallery">
       <div class="section-heading reveal">
-        <img class="divider" src="botanical-divider.svg" alt="" aria-hidden="true">
+        <img class="divider" src="assets/section-divider.png" alt="" aria-hidden="true">
         <p class="eyebrow">A small selection</p>
         <h2>Featured Work</h2>
-        <p>A preview of the gentle floral and landscape direction of the collection. We can swap in more paintings as you send them.</p>
+        <p>This gallery is still using temporary artwork while we choose and prepare Priya’s paintings for the site.</p>
       </div>
 
       <div class="art-grid">
         <article class="art-card reveal">
-          <button class="art-button" type="button" data-lightbox-src="corner-cyclamen.webp" data-lightbox-alt="Cyclamen in a pot watercolour painting">
-            <img src="corner-cyclamen.webp" alt="Cyclamen in a pot watercolour painting">
+          <button class="art-button" type="button" data-lightbox-src="placeholder-peonies.jpg" data-lightbox-alt="Temporary floral watercolour">
+            <img src="placeholder-peonies.jpg" alt="Temporary floral watercolour">
           </button>
           <div class="art-meta">
-            <h3>Cyclamen</h3>
-            <p>Watercolour · original painting</p>
+            <h3>Floral Study</h3>
+            <p>Temporary placeholder</p>
           </div>
         </article>
 
         <article class="art-card reveal">
-          <button class="art-button" type="button" data-lightbox-src="corner-hydrangea.webp" data-lightbox-alt="Pink blossom watercolour painting">
-            <img src="corner-hydrangea.webp" alt="Pink blossom watercolour painting">
-          </button>
-          <div class="art-meta">
-            <h3>Pink Blossoms</h3>
-            <p>Watercolour · original painting</p>
-          </div>
-        </article>
-
-        <article class="art-card reveal">
-          <button class="art-button" type="button" data-lightbox-src="placeholder-evening-light.jpg" data-lightbox-alt="Watercolour landscape placeholder painting">
-            <img src="placeholder-evening-light.jpg" alt="Watercolour landscape painting">
+          <button class="art-button" type="button" data-lightbox-src="placeholder-evening-light.jpg" data-lightbox-alt="Temporary evening landscape watercolour">
+            <img src="placeholder-evening-light.jpg" alt="Temporary evening landscape watercolour">
           </button>
           <div class="art-meta">
             <h3>Evening Light</h3>
-            <p>Watercolour · temporary placeholder</p>
+            <p>Temporary placeholder</p>
+          </div>
+        </article>
+
+        <article class="art-card reveal">
+          <button class="art-button" type="button" data-lightbox-src="placeholder-harbour-calm.jpg" data-lightbox-alt="Temporary boat watercolour">
+            <img src="placeholder-harbour-calm.jpg" alt="Temporary boat watercolour">
+          </button>
+          <div class="art-meta">
+            <h3>Harbour Calm</h3>
+            <p>Temporary placeholder</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="about section-shell" id="about">
-      <div class="about-panel reveal">
-        <p class="eyebrow">The artist</p>
-        <h2>About Priya</h2>
-        <img class="divider divider--left" src="botanical-divider.svg" alt="" aria-hidden="true">
-        <p class="about-lead">Priya Bhatia is a watercolour artist based in Dundas, Ontario.</p>
-        <p>This space is ready for a short introduction to Priya’s work, inspiration, and approach. Once you give me a little biographical text, I can make this feel much more personal.</p>
-        <p class="script-note">A quiet place for colour, light, and observation.</p>
+    <section class="about-wrap" id="about">
+      <img class="about-ornament" src="assets/leaf-sprig-d.png" alt="" aria-hidden="true">
+      <div class="about section-shell">
+        <div class="about-panel reveal">
+          <p class="eyebrow">The artist</p>
+          <h2>About Priya</h2>
+          <img class="divider divider--left" src="assets/section-divider.png" alt="" aria-hidden="true">
+          <p class="about-lead">Priya Bhatia is a watercolour artist based in Dundas, Ontario.</p>
+          <p>This space is ready for a short introduction to Priya’s work, inspiration, and approach. Once we have her final biography, this section can become more personal.</p>
+          <p class="script-note">A quiet place for colour, light, and observation.</p>
+        </div>
       </div>
     </section>
 
     <section class="available section-shell" id="available">
       <div class="section-heading reveal">
-        <img class="divider" src="botanical-divider.svg" alt="" aria-hidden="true">
+        <img class="divider" src="assets/section-divider.png" alt="" aria-hidden="true">
         <p class="eyebrow">For collectors</p>
         <h2>Available Work</h2>
-        <p>This section is ready for paintings that are currently for sale, with dimensions, prices, and a simple way to enquire.</p>
+        <p>Original paintings that are currently available can be shown here with dimensions, price, and a simple way to enquire.</p>
       </div>
 
       <div class="availability-note reveal">
-        <p>We can add Priya’s current available paintings here next.</p>
+        <img class="small-accent" src="assets/botanical-accent-a.png" alt="" aria-hidden="true">
+        <p>We’ll add Priya’s current available paintings here next.</p>
         <a class="paint-button paint-button--small" href="mailto:priya.bhatia@gmail.com?subject=Artwork%20enquiry">Enquire About a Painting</a>
       </div>
     </section>
@@ -128,6 +131,7 @@
       <div class="contact-card reveal">
         <p class="eyebrow">Get in touch</p>
         <h2>Contact</h2>
+        <img class="rule" src="assets/rule.png" alt="" aria-hidden="true">
         <p>For questions about available work, commissions, or exhibitions, send Priya a note.</p>
         <a class="contact-email" href="mailto:priya.bhatia@gmail.com">priya.bhatia@gmail.com</a>
         <p class="location">Dundas, Ontario</p>
@@ -136,7 +140,7 @@
   </main>
 
   <footer class="site-footer">
-    <img class="divider" src="botanical-divider.svg" alt="" aria-hidden="true">
+    <img class="footer-flourish" src="assets/footer-flourish.png" alt="" aria-hidden="true">
     <p>© <span id="year"></span> Priya Bhatia Art Studio</p>
   </footer>
 
