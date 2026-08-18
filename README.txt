@@ -1,9 +1,3 @@
-Priya Bhatia Art Studio · v0.7
+Priya Bhatia Art Studio · v0.9
 
-This version swaps the temporary paintings for a preview selection of Priya's real paintings.
-
-Image placement:
-- Hero: canoe lake scene
-- Gallery order: Summer, Flower, Winter
-
-Upload all files in this folder, including the assets folder, to the root of your GitHub repository, replacing the existing files.
+This version swaps in the recropped hero and flower images and adds a slightly stronger shadow/frame treatment around the paintings.
