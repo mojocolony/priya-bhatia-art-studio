@@ -1,10 +1,8 @@
 :root {
   --paper: #fbf8f1;
-  --paper-deep: #f6f1e8;
   --ink: #243d69;
   --ink-soft: #48607c;
   --rose: #c45685;
-  --rose-soft: #dfa4b8;
   --green: #74785a;
   --line: rgba(196, 86, 133, .25);
   --shadow: 0 24px 62px rgba(58, 48, 40, .10);
@@ -86,7 +84,6 @@ button { font: inherit; }
   font-family: var(--display);
   font-weight: 600;
   font-size: .96rem;
-  color: var(--ink);
 }
 .site-nav a::after {
   content: "";
@@ -112,7 +109,7 @@ button { font: inherit; }
 
 .hero-wrap {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   min-height: 720px;
 }
 .hero {
@@ -130,19 +127,20 @@ button { font: inherit; }
   user-select: none;
   z-index: 1;
 }
+/* These now read as quiet corner embellishments rather than floating illustrations. */
 .hero-ornament--green {
-  width: clamp(280px, 28vw, 460px);
-  top: 2rem;
-  right: -5rem;
-  transform: rotate(-12deg);
-  opacity: .64;
+  width: clamp(300px, 29vw, 455px);
+  top: -4.5rem;
+  right: -7.5rem;
+  transform: rotate(-7deg);
+  opacity: .50;
 }
 .hero-ornament--rose {
-  width: clamp(250px, 24vw, 390px);
-  left: -5.5rem;
-  bottom: 1.5rem;
-  transform: rotate(14deg);
-  opacity: .62;
+  width: clamp(275px, 25vw, 390px);
+  left: -5.25rem;
+  bottom: -2.25rem;
+  transform: rotate(9deg);
+  opacity: .45;
 }
 
 .eyebrow {
@@ -281,7 +279,7 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 
 .about-wrap {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   padding: clamp(4rem, 8vw, 7rem) 0;
 }
 .about { padding: 0; }
@@ -304,11 +302,11 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 }
 .about-ornament {
   position: absolute;
-  width: clamp(260px, 26vw, 420px);
-  left: -3.5rem;
+  width: clamp(250px, 24vw, 390px);
+  left: -5rem;
   top: 50%;
-  transform: translateY(-50%) rotate(9deg);
-  opacity: .48;
+  transform: translateY(-50%) rotate(-7deg);
+  opacity: .34;
   pointer-events: none;
 }
 
@@ -320,13 +318,12 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   padding: 2.4rem 1.5rem;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  position: relative;
 }
 .availability-note p { color: var(--ink-soft); margin: 0 0 1rem; }
 .small-accent {
-  width: 105px;
-  margin: -1rem auto .5rem;
-  opacity: .8;
+  width: 68px;
+  margin: -1rem auto .65rem;
+  opacity: .74;
 }
 
 .contact { padding: clamp(5rem, 9vw, 8rem) 0 clamp(4rem, 7vw, 6rem); }
@@ -363,7 +360,7 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 .footer-flourish {
   width: min(430px, 75vw);
   margin: 0 auto .45rem;
-  opacity: .88;
+  opacity: .82;
 }
 
 .lightbox {
@@ -439,12 +436,12 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   .hero-copy { max-width: 620px; }
   .hero-art { order: -1; }
   h1 { font-size: clamp(3.8rem, 13vw, 6.2rem); }
-  .hero-ornament--green { width: min(43vw, 360px); right: -6rem; top: 0; opacity: .48; }
-  .hero-ornament--rose { width: min(37vw, 310px); left: -6rem; bottom: 0; opacity: .46; }
+  .hero-ornament--green { width: min(43vw, 340px); right: -6rem; top: -3rem; opacity: .35; }
+  .hero-ornament--rose { width: min(36vw, 285px); left: -5.5rem; bottom: -1rem; opacity: .32; }
   .art-grid { grid-template-columns: 1fr 1fr; }
   .art-card:last-child { grid-column: 1 / -1; width: 52%; justify-self: center; }
   .about-panel { margin: 0 auto; }
-  .about-ornament { left: -7rem; opacity: .32; }
+  .about-ornament { left: -8rem; opacity: .24; }
 }
 
 @media (max-width: 620px) {
@@ -452,8 +449,8 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   .brand { width: 200px; }
   .hero { padding: 2.2rem 0 4.4rem; }
   .hero-art img { aspect-ratio: 1.42 / 1; }
-  .hero-ornament--green { width: 220px; right: -7rem; top: 7rem; opacity: .32; }
-  .hero-ornament--rose { width: 190px; left: -6rem; bottom: 1rem; opacity: .3; }
+  .hero-ornament--green { width: 190px; right: -7rem; top: -2rem; opacity: .22; }
+  .hero-ornament--rose { width: 170px; left: -6rem; bottom: 0; opacity: .20; }
   .art-grid { grid-template-columns: 1fr; }
   .art-card:last-child { grid-column: auto; width: 100%; }
   .about-panel, .contact-card { padding: 2.1rem 1.3rem; }
