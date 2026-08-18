@@ -1,3 +1,3 @@
-Priya Bhatia Art Studio · v0.12
+Priya Bhatia Art Studio · v0.13
 
-This version replaces every decorative botanical PNG with the rebuilt clean asset set. The new assets have transparent safety margins and complete leaf/stem tips, so the homepage and About sprigs are no longer cut off.
+Corrects the logo by replacing the tightly cropped asset with the fuller source image, preserving the watercolor splatter on the left side. The logo display size was adjusted slightly to maintain the same visual scale in the header.

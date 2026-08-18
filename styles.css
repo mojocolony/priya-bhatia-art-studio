@@ -711,3 +711,17 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   .hero-ornament--green { width: 175px; right: .25rem; }
   .hero-ornament--rose { width: 160px; left: .25rem; }
 }
+
+/* v0.13 — logo source correction
+   Use the fuller logo source so watercolor splatters are not cropped. */
+.brand {
+  width: clamp(285px, 27vw, 400px);
+}
+
+@media (max-width: 980px) {
+  .brand { width: 255px; }
+}
+
+@media (max-width: 620px) {
+  .brand { width: 220px; }
+}
