@@ -831,3 +831,82 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   .hero-ornament--rose { width: 130px; left: -1.25rem; bottom: .25rem; opacity: .12; }
   .about-ornament { display: none; }
 }
+
+
+/* v0.18 — subtle social icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  margin: .8rem 0 .25rem;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--ink-soft);
+  opacity: .68;
+  display: inline-grid;
+  place-items: center;
+}
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.social-icon:first-child svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.35;
+}
+.social-icon:first-child .social-dot {
+  fill: currentColor;
+  stroke: none;
+}
+.social-icon:last-child svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+
+/* v0.19 — move social icons into the navigation row */
+.social-icons { display: none; }
+
+.nav-social {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  margin-left: .2rem;
+  padding-left: .9rem;
+  border-left: 1px solid rgba(36, 61, 105, .16);
+}
+
+.nav-social .social-icon {
+  width: 17px;
+  height: 17px;
+  color: var(--ink);
+  opacity: .56;
+  display: inline-grid;
+  place-items: center;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.nav-social .social-icon:hover {
+  opacity: .82;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px) {
+  .nav-social {
+    margin: .4rem 0 0;
+    padding: .85rem 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    width: 100%;
+    gap: .75rem;
+  }
+  .nav-social .social-icon {
+    width: 19px;
+    height: 19px;
+  }
+}
