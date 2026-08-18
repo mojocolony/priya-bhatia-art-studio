@@ -682,3 +682,32 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
     display: none;
   }
 }
+
+
+/* v0.12 — rebuilt botanical assets.
+   The PNGs now include transparent safety margins, so the artwork can sit near page edges without being clipped. */
+.hero-ornament--green {
+  width: clamp(300px, 28vw, 430px);
+  top: 1.25rem;
+  right: .75rem;
+}
+.hero-ornament--rose {
+  width: clamp(275px, 25vw, 390px);
+  left: .75rem;
+  bottom: .75rem;
+}
+.about-ornament {
+  width: clamp(270px, 25vw, 400px);
+  left: .75rem;
+}
+
+@media (max-width: 980px) {
+  .hero-ornament--green { width: min(39vw, 340px); right: .5rem; }
+  .hero-ornament--rose { width: min(35vw, 300px); left: .5rem; }
+  .about-ornament { width: min(34vw, 300px); left: .5rem; }
+}
+
+@media (max-width: 620px) {
+  .hero-ornament--green { width: 175px; right: .25rem; }
+  .hero-ornament--rose { width: 160px; left: .25rem; }
+}

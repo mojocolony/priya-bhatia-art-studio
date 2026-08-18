@@ -1,3 +1,3 @@
-Priya Bhatia Art Studio · v0.11
+Priya Bhatia Art Studio · v0.12
 
-Placement-only correction for decorative botanical sprigs. The sprigs now remain fully visible within the page rather than extending past clipped container edges.
+This version replaces every decorative botanical PNG with the rebuilt clean asset set. The new assets have transparent safety margins and complete leaf/stem tips, so the homepage and About sprigs are no longer cut off.
