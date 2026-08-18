@@ -222,8 +222,8 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 .hero-art { position: relative; }
 .hero-art img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  aspect-ratio: 1.7 / 1;
+  object-fit: cover;
   box-shadow: var(--shadow);
   border-radius: 2px;
   clip-path: polygon(2% 2%, 98% 0, 100% 97%, 97% 100%, 1% 98%, 0 4%);
@@ -259,8 +259,8 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 .art-card { text-align: center; }
 .art-card img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  aspect-ratio: 1.45 / 1;
+  object-fit: cover;
   box-shadow: var(--shadow-soft);
   transition: transform .25s ease, box-shadow .25s ease;
 }
@@ -448,6 +448,7 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   .section-shell { width: min(100% - 2rem, 1180px); }
   .brand { width: 200px; }
   .hero { padding: 2.2rem 0 4.4rem; }
+  .hero-art img { aspect-ratio: 1.42 / 1; }
   .hero-ornament--green { width: 190px; right: -7rem; top: -2rem; opacity: .22; }
   .hero-ornament--rose { width: 170px; left: -6rem; bottom: 0; opacity: .20; }
   .art-grid { grid-template-columns: 1fr; }

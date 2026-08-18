@@ -1,9 +1,9 @@
-Priya Bhatia Art Studio · v0.6
+Priya Bhatia Art Studio · v0.7
 
-This revision fixes the decorative asset problems in v0.5:
-- no labels or asset names are embedded in the individual PNGs
-- the homepage sprigs are repositioned as quieter corner embellishments
-- the About, Available Work, Contact, and footer ornaments use clean crops
-- filenames are descriptive rather than A/B/C-style references
+This version swaps the temporary paintings for a preview selection of Priya's real paintings.
 
-Upload all files and the entire assets folder to the root of the GitHub repository, replacing v0.5.
+Image placement:
+- Hero: canoe lake scene
+- Gallery order: Summer, Flower, Winter
+
+Upload all files in this folder, including the assets folder, to the root of your GitHub repository, replacing the existing files.
