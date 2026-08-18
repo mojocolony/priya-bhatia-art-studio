@@ -613,3 +613,72 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
     width: 100%;
   }
 }
+
+
+/* v0.11 — ornamental placement correction */
+.hero-wrap,
+.about-wrap {
+  overflow: visible;
+}
+
+.hero-ornament--green {
+  width: clamp(260px, 25vw, 390px);
+  top: 1.5rem;
+  right: 1.5rem;
+  transform: rotate(-7deg);
+  opacity: .46;
+}
+
+.hero-ornament--rose {
+  width: clamp(235px, 22vw, 340px);
+  left: 1.5rem;
+  bottom: 1.25rem;
+  transform: rotate(9deg);
+  opacity: .42;
+}
+
+.about-ornament {
+  width: clamp(230px, 22vw, 350px);
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-7deg);
+  opacity: .30;
+}
+
+@media (max-width: 980px) {
+  .hero-ornament--green {
+    width: min(34vw, 300px);
+    right: 1rem;
+    top: 1rem;
+    opacity: .30;
+  }
+  .hero-ornament--rose {
+    width: min(30vw, 255px);
+    left: 1rem;
+    bottom: 1rem;
+    opacity: .28;
+  }
+  .about-ornament {
+    left: 1rem;
+    width: min(29vw, 265px);
+    opacity: .22;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-ornament--green {
+    width: 145px;
+    right: .6rem;
+    top: .6rem;
+    opacity: .18;
+  }
+  .hero-ornament--rose {
+    width: 135px;
+    left: .6rem;
+    bottom: .6rem;
+    opacity: .17;
+  }
+  .about-ornament {
+    display: none;
+  }
+}

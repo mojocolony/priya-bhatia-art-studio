@@ -1,3 +1,3 @@
-Priya Bhatia Art Studio · v0.10
+Priya Bhatia Art Studio · v0.11
 
-This version strengthens the shadow and frame treatment around the paintings so they stand out more clearly from the paper background.
+Placement-only correction for decorative botanical sprigs. The sprigs now remain fully visible within the page rather than extending past clipped container edges.
