@@ -5,8 +5,8 @@
   --rose: #c45685;
   --green: #74785a;
   --line: rgba(196, 86, 133, .25);
-  --shadow: 0 16px 38px rgba(58, 48, 40, .16);
-  --shadow-soft: 0 10px 24px rgba(58, 48, 40, .14);
+  --shadow: 0 20px 42px rgba(58, 48, 40, .22), 0 4px 14px rgba(58, 48, 40, .10);
+  --shadow-soft: 0 16px 30px rgba(58, 48, 40, .20), 0 3px 10px rgba(58, 48, 40, .08);
   --serif: "Libre Baskerville", Georgia, serif;
   --display: "Cormorant Garamond", Georgia, serif;
 }
@@ -225,8 +225,8 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   height: auto;
   object-fit: contain;
   background: rgba(255,255,255,.96);
-  padding: 8px;
-  border: 1px solid rgba(36, 61, 105, .06);
+  padding: 10px;
+  border: 1px solid rgba(36, 61, 105, .08);
   box-shadow: var(--shadow);
   border-radius: 2px;
 }
@@ -264,15 +264,15 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
   height: auto;
   object-fit: contain;
   background: rgba(255,255,255,.96);
-  padding: 8px;
-  border: 1px solid rgba(36, 61, 105, .06);
+  padding: 10px;
+  border: 1px solid rgba(36, 61, 105, .08);
   box-shadow: var(--shadow-soft);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .art-card .art-button:hover img,
 .art-card .art-button:focus-visible img {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+  box-shadow: 0 22px 46px rgba(58, 48, 40, .26), 0 5px 14px rgba(58, 48, 40, .10);
 }
 .art-meta { padding: .95rem .4rem 0; }
 .art-meta p {
@@ -534,8 +534,8 @@ h3 { font-size: 1.6rem; margin-bottom: .15rem; }
 }
 .art-card .art-button:hover,
 .art-card .art-button:focus-visible {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+  box-shadow: 0 22px 46px rgba(58, 48, 40, .26), 0 5px 14px rgba(58, 48, 40, .10);
 }
 .art-card .art-button:hover img,
 .art-card .art-button:focus-visible img {

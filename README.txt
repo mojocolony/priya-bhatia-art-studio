@@ -1,3 +1,3 @@
-Priya Bhatia Art Studio · v0.9
+Priya Bhatia Art Studio · v0.10
 
-This version swaps in the recropped hero and flower images and adds a slightly stronger shadow/frame treatment around the paintings.
+This version strengthens the shadow and frame treatment around the paintings so they stand out more clearly from the paper background.
